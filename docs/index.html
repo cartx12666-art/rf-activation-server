@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RF Online - Activation Server</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0B0F19;
+            color: #E2E8F0;
+            font-family: 'Segoe UI', -apple-system, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            padding: 60px 40px;
+            border: 1px solid #2D3748;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 60px; height: 2px;
+            background: #00D4FF;
+        }
+        .container::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 2px; height: 12px;
+            background: #00D4FF;
+        }
+        h1 {
+            color: #00D4FF;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #94A3B8;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+        .status-dot {
+            display: inline-block;
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: #10B981;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(16,185,129,0.4); }
+            50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(16,185,129,0); }
+        }
+        .status {
+            color: #10B981;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .info {
+            color: #64748B;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+        code {
+            background: #1A1F2E;
+            color: #00D4FF;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #1E293B;
+            color: #475569;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RF ONLINE</h1>
+        <div class="subtitle">ACTIVATION SERVER</div>
+        <div class="status">
+            <span class="status-dot"></span>
+            Server Active
+        </div>
+        <p class="info">
+            This server provides hardware activation<br>
+            verification for RF Online Launcher.<br><br>
+            Activation data is served from<br>
+            <code>activations.txt</code>
+        </p>
+        <div class="footer">LICENSED ACTIVATION SYSTEM</div>
+    </div>
+</body>
+</html>
